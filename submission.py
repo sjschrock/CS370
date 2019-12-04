@@ -5,7 +5,7 @@ uri = 'otpauth://totp/Example:alice@google.com?secret=JBSWY3DPEHPK3PXP&issuer=Ex
 
 if sys.argv[1] == '--generate-qr':
     img = qrcode.make(uri)
-    img.save('qr.svg')
+    img.save('qr.jpg')
     
     print('made it')
     
